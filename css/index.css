@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* palleta de colores: https://colorhunt.co/palette/262269 */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+ol, ul {
+    padding-left: 0 !important;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+/* Estilos de menu */
+
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    transition: background-color 0.5s ease;
+    background-color: rgba(0, 0, 0, 0);
+}
+p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html, body
+{
+    overflow-x: hidden;
+    
+}
+body
+{
+    position: relative
+}
+strong
+{
+    color:#FC890E ;
+}
+h1
+{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+}
+textarea
+{
+    color: white  !important;
+}
+input
+{
+    color: white  !important;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+a:hover
+{
+    color: white;
+}
+.nav-links a
+{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 15px;
+    margin: 5px;
+    transition: background-color .2s, border-radius .2s,transform .2s; 
+    
+}
+.nav-links a:hover
+{
+    background-color: #FC890E;
+    border-radius: 20px;
+    
+}
+.nav-links 
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.unete-button
+{
+    border: 5px solid #FC890E; 
+    border-radius: 20px;
+}
+.unete-button:hover
+{
+    border: solid 5px #F01603;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.sticky {
+    position: fixed;
+    z-index: 999;
+    transition: background-color 0.5s ease;
+    background-color: #151515;
+    top: 0;
+    width: 100%
+}
+.logo
+{
+    width: 90px;
+    position: relative;
+    left: -20%;
+}
+.logo-title
+{
+    color: white;
+    position: relative;
+    left: -40%;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+/* Estilos menu mobile  */
+.burger 
+{
+  display: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.burger div
+{
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+/* Estilos Inicio  */
+
+.Inicio
+{
+    min-height: 100vh;
+    background-image: url(../img/bg-inicio.jpg);
+    background-size: cover;
+    color: white;
+}
+main{
+    text-align: center;
+    position: absolute;
+    left: 270px;
+    top: 130px;
+}
+
+.uno{
+    font-size: 7rem;
+}
+.dos{
+    font-size: 2rem;
+}
+.dos img 
+{
+    width: 180px;
+}
+.meuno{
+    background:#FC890E;
+    border-radius: 20px;
+    font-size: 2.2em;
+    padding: 10px 50px;
+    border: none;
+    color: #ffffff;
+    transition: background 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.meuno a
+{
+    color: white;
+}
+.meuno:hover{
+    
+    background:#995308;
+    cursor: pointer;
+
+}
+.contador
+{
+    position: relative;
+    top: 40px;
+    font-size: 2.4em;
+    font-weight: 700;
+    padding: 5px 35px;
+    border: solid #FC890E 5px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+
+/* Estilos Nosotros */
+.nosotros
+{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    min-height: 100vh;
+    font-size: 1.3em;
+}
+.nosotros-title
+{
+    margin-top: 100px;
+    margin-left: 70px;
+    font-size: 2em;
+    color: #FC890E;
+}
+.nosotros-a
+{
+    background-color: #36393F;
+}
+.nosotros-b
+{
+    background-color: #151515;
+    
+}
+.nosotros-faq 
+{
+    margin: 70px;
+}
+.nosotros-stats
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 85px;
+}
+.nosotros-stats-info h1
+{
+    color: #fc890e;
+}
+.disclamer
+{
+    font-size: .8em; 
+    margin-left: 70px;
+}
+/* Estilos Agenda */
+.agenda
+{
+    background-image: url(../img/agenda-background.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    font-size: 1.3em;
+}
+.agenda-title
+{
+    font-size: 2em;
+    color: #FC890E;
+    margin-left: 280px;
+    padding-top: 50px;
+}
+.agenda-info
+{
+    display: flex;
+    padding: 50px;
+    margin-left: 180px;
+}
+/* Estilos Ponentes */
+.ponentes
+{
+    background-color: #1F1F1F;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+.ponentes-title
+{
+    background-color: #1F1F1F;
+    color: #fc890e;
+    padding-left: 70px;
+    padding-top: 100px;
+    font-size: 42px;
+    margin-bottom: 0;
+    
+}
+.ponentes-info
+{
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos Patrocinadores */
+.patrocinadores
+{
+    background-color: #36393F; 
+    padding: 100px;
+}
+.patrocinadores h1
+{
+    color: #FC890E;
+}
+
+.sponsor-img
+{
+    width: 350px;
+    margin: 25px;
+}
+/* Estilos Reto */
+.reto
+{
+    background-color: #1F1F1F; 
+    height: 700px;
+    padding-top: 100px;
+    padding-left: 70px;
+}
+.reto h1
+{
+    color: #FC890E;
+}
+.reto-content
+{
+    color: white;
+    font-size: 1.6em;
+}
+
+/* Estilos Contacto */
+.contacto
+{
+    padding-top: 50px;
+    padding-left: 70px;
+    min-height: 550px;
+    background-color: #151515;
+}
+.btn-contact
+{
+    margin: 40px 0px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    border: 5px solid #FC890E; 
+    background-color: #FC890E;
+}
+.btn-contact:hover
+{
+    border: 5px solid red;
+}
+.responsive
+{
+    display: none;
+}
+/* Estilos Ayuda */
+
+.gracias-por-tu-mensaje h1
+{
+
+    font-size: 46px;
+}
+
+.gracias-por-tu-mensaje h2
+{
+    font-size: 36px;
+}
+
+.gracias-por-tu-mensaje .a-link  
+{
+    color: white;
+    background-color: #FC890E;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.gracias-por-tu-mensaje img 
+{
+    width: 100px;
+    margin: 50px;
+}
+
+.ayuda
+{
+    padding: 50px 0;
+    background-color: #1F1F1F;
+    color: #FC890E;
+    justify-self: center;
+    min-height: 150px;
+}
+.container-redes
+{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width: 1366px)
+{
+    .uno
+    {
+        font-size: 5em;
+        padding: 2px;
+    }
+    .dos
+    {
+        font-size: 2.2em;
+    }
+    .dos img 
+    {
+        width: 150px;
+    }
+    .nav-links a
+    {
+        font-size: 1em;
+    }
+    .logo-title
+    {
+        font-size: 1.2em;
+    }
+    .contador
+    {
+        font-size: 2.5em;
+        padding: 10px;
+        
+    }
+    main
+    {
+        top:80px
+    }
+    .sponsor-img
+    {
+        width: 400px;
+    }
+}
+
+
+/* Laptop */
+
+@media only screen and (max-width: 1024px) 
+{
+    .uno
+    {
+        font-size: 4em;
+        padding: 2px;
+    }
+    .dos
+    {
+        font-size: 2em;
+    }
+
+    .nav-links
+    {
+        left: 0%;
+        width: 100%;
+    }
+    .nav-links a
+    {
+        font-size: 1em;
+    }
+    .logo-title
+    {
+        display: none;
+    }
+    .logo
+    {
+        left: 0%;
+        width: 90px;
+    }
+    /* Estilos Inicio  */
+    .Inicio
+    {
+        min-height: 100vh;
+    }
+    .contador
+    {
+        left: 0;
+        font-size: 2em;
+    }
+    main
+    {
+        top: 120px;
+        left: 80px;
+    }
+
+    /* Estilos Nosotros */
+
+    /* Estilos Agenda */
+
+    /* Estilos Ponentes */
+
+    /* Estilos Patrocinadores */
+
+    /* Estilos Contacto */
+
+    /* Estilos Ayuda */
+}
+
+/* Tablet */
+@media screen and (max-width: 768px)
+{
+    .logo-title
+    {
+        display: block;
+    }
+    .Inicio
+    {
+        min-height: 100vh;
+    }
+    .nav-links
+    {
+        position: absolute;
+        left: 0px;
+        height: 100vh;
+        top: 0vh;
+        background-color: #151515;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 999;
+    }
+    .nav-links a
+    {
+        font-size: 2em;
+    }
+    .burger
+    {
+        display: block;
+    }
+    .logo-title
+    {
+        left: -10%;
+        font-size: 1.4em;
+    }
+    /* Estilos Inicio  */
+    main
+    {
+        top: 150px;
+        left: 0;
+    }
+    .uno{
+        font-size: 5rem;
+    }
+    .dos{
+        font-size: 2rem;
+    }
+    .dos img 
+    {
+        width: 100px;
+    }
+    .contador
+    {
+        padding: 0;
+        top: 20px;
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    /* Estilos Nosotros */
+    .nosotros
+    {
+        flex-direction: column;
+    }
+    .nosotros-title
+    {
+        margin-left: 40px;
+    }
+    .nosotros-stats
+    {
+        flex-wrap: wrap;
+        margin: 100px;
+        position: relative;
+        right: 50px;
+        justify-content: space-between;
+
+    }
+    .disclamer
+    {
+        margin-left: 40px;
+    }
+    .espacio 
+    {
+        display: none;
+    }
+    .nosotros-faq 
+    {
+        margin: 40px;
+    }
+
+    /* Estilos Agenda */
+    .agenda
+    {
+        font-size: 1em;
+    }
+    .agenda-title
+    {
+        font-size: 2em;
+        color: #FC890E;
+        margin-left: 0px;
+        padding-top: 0px;
+    }
+    .agenda-info
+    {
+        display: flex;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    
+    .agenda-container 
+    {
+        padding: 30px;
+        position: relative;
+        top: 100px;
+    }
+
+    /* Estilos Ponentes */
+
+    /* Estilos Patrocinadores */
+    .patrocinadores
+    {
+        padding: 50px 20px;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .sponsor-img
+    {
+        width: 300px;
+    }
+
+    /* Estilos Contacto */
+    .contacto
+    {
+        height: 600px;
+    }
+    .contacto .row 
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .contacto h1 
+    {
+        font-size: 42px;
+    }
+    .contacto input 
+    {
+        width: 80% !important;
+    }
+    .contacto textarea 
+    {
+        width: 100% !important;
+    }
+    .btn-contact
+    {
+        display: none;
+        max-width: min-content;
+    }
+    .responsive
+    {
+        display: inline-block;
+    }
+
+    
+    .reto
+    {
+        padding-top: 40px;
+        height: 150vh;
+    }
+    .reto-content
+    {
+        font-size: 1.3em;
+        margin: 40px;
+    }
+    
+
+    /* Estilos Ayuda */
+    .ayuda h1
+    {
+        font-size: 42px;
+    }
+    .container-redes
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .redes-item
+    {
+        margin: 20px;
+    }
+    .gracias-por-tu-mensaje h1
+    {
+
+        font-size: 26px;
+    }
+
+    .gracias-por-tu-mensaje h2
+    {
+        font-size: 20px;
+    }
+
+    .gracias-por-tu-mensaje .a-link  
+    {
+        color: white;
+        background-color: #FC890E;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    .gracias-por-tu-mensaje img 
+    {
+        width: 100px;
+        margin: 50px;
+    }
+    
+
+    
+    
+}
+
+/* Smartphone */
+
+@media screen and (max-width: 480px)
+{
+    /* Estilos Inicio  */
+    .uno
+    {
+        font-size: 4em;
+        padding: 2px;
+    }
+    .dos
+    {
+        font-size: 1.7em;
+    }
+
+    /* Estilos Nosotros */
+    .nosotros-stats
+    {
+        right: 0;
+    }
+    /* Estilos Agenda */
+
+    /* Estilos Ponentes */
+
+    /* Estilos Patrocinadores */
+
+    .row
+    {
+        flex-direction: column;
+    }
+    .sponsor-img
+    {
+        width: 250px;
+    }
+    /* Estilos Reto */
+    .reto
+    {
+        padding-left: 0;
+    }
+    .reto-title
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 42px;
+    }
+
+    /* Estilos Contacto */
+    .contacto .row 
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .contacto h1 
+    {
+        font-size: 42px;
+    }
+    .contacto input 
+    {
+        width: 230% !important;
+    }
+    .contacto textarea 
+    {
+        width: 100% !important;
+    }
+
+    /* Estilos Ayuda */
+
+}
+
+/* Animaciones del menu */
+.nav-active 
+{
+  transform: translateX(0%);
+}
+.toggle .line1
+{
+  transform: rotate(-45deg) translate(-20px,1px);
+}
+.toggle .line2
+{
+  opacity: 0;
+}
+.toggle .line3
+{
+  transform: rotate(45deg) translate(-20px,-1px);
+}
