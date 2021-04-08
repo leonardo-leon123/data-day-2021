@@ -152,12 +152,12 @@ a:hover
 main{
     text-align: center;
     position: absolute;
-    left: 270px;
+    left: 350px;
     top: 130px;
 }
 
 .uno{
-    font-size: 7rem;
+    font-size: 5rem;
 }
 .dos{
     font-size: 2rem;
@@ -269,34 +269,47 @@ main{
 /* Estilos Ponentes */
 .ponentes
 {
-    background-color: #1F1F1F;
+    background-color: #151515;
     color: white;
     min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    display: table;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
 }
 .ponentes-title
 {
-    background-color: #1F1F1F;
+    background-color: #151515;
     color: #fc890e;
     padding-left: 70px;
     padding-top: 100px;
     font-size: 42px;
     margin-bottom: 0;
-    
 }
 .ponentes-info
 {
-    margin: 10px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    margin: 50px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    border: 3px solid #fc890e;
+}
+.ponente-img
+{
+    width: 20%;
+}
+.ponente-name
+{
+    font-size: 42px;
+}
+.ponente-desc
+{
+    font-size: 26px;
+}
+.ponente-bg
+{
+    background: #1f1f1f;
 }
 
 /* Estilos Patrocinadores */
@@ -319,7 +332,7 @@ main{
 .reto
 {
     background-color: #1F1F1F; 
-    height: 700px;
+    height: 800px;
     padding-top: 100px;
     padding-left: 70px;
 }
@@ -443,7 +456,7 @@ main{
 {
     .uno
     {
-        font-size: 5em;
+        font-size: 4em;
         padding: 2px;
     }
     .dos
@@ -470,7 +483,8 @@ main{
     }
     main
     {
-        top:80px
+        top: 100px;
+        left: 190px;
     }
     .sponsor-img
     {
@@ -660,6 +674,22 @@ main{
     }
 
     /* Estilos Ponentes */
+    .ponente-img
+    {
+        width: 35%;
+    }
+    .ponente-name
+    {
+        font-size: 38px;
+    }
+    .ponente-desc
+    {
+        font-size: 22px;
+    }
+    .ponente-bg
+    {
+        background: #1f1f1f;
+    }
 
     /* Estilos Patrocinadores */
     .patrocinadores
@@ -772,6 +802,10 @@ main{
 @media screen and (max-width: 480px)
 {
     /* Estilos Inicio  */
+    .Inicio
+    {
+        min-height: 130vh;
+    }
     .uno
     {
         font-size: 4em;
@@ -791,6 +825,22 @@ main{
 
     /* Estilos Ponentes */
 
+    .ponente-img
+    {
+        width: 50%;
+    }
+    .ponente-name
+    {
+        font-size: 32px;
+    }
+    .ponente-desc
+    {
+        font-size: 18px;
+    }
+    .ponente-bg
+    {
+        background: #1f1f1f;
+    }
     /* Estilos Patrocinadores */
 
     .row
@@ -804,6 +854,7 @@ main{
     /* Estilos Reto */
     .reto
     {
+        min-height: 160vh;
         padding-left: 0;
     }
     .reto-title
@@ -852,4 +903,33 @@ main{
 .toggle .line3
 {
   transform: rotate(45deg) translate(-20px,-1px);
+}
+
+@media screen and (max-width: 360px)
+{
+    .Inicio
+    {
+        min-height: 150vh;
+    }
+    .reto
+    {
+        min-height: 220vh;
+    }
+    .ponente-img
+    {
+        width: 60%;
+    }
+    .ponente-name
+    {
+        font-size: 30px;
+    }
+    .ponente-desc
+    {
+        font-size: 16px;
+    }
+    .ponente-bg
+    {
+        background: #1f1f1f;
+    }
+
 }
