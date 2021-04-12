@@ -155,6 +155,9 @@ main{
     left: 350px;
     top: 130px;
 }
+main a{
+    color: white;
+}
 
 .uno{
     font-size: 5rem;
