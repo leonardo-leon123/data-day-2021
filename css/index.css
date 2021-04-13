@@ -145,7 +145,7 @@ a:hover
 .Inicio
 {
     min-height: 100vh;
-    background-image: url(../img/bg-inicio.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/bg-inicio.jpg);
     background-size: cover;
     color: white;
 }
